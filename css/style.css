@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    background-color: #000;
+}
+
+.carousel {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+ul {
+    width: 500vw;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+li {
+    width: 100vw;
+    float: left;
+}
+
+img {
+    width: 100vw;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.angles {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100vw;
+    position: absolute;
+}
+
+[class*="fa-angle"] {
+    opacity: 0.7;
+    color: white;
+    font-size:100px;
+    line-height: 100px;
+    cursor: pointer;
+    /* top: 50%;
+    transform: translateY(-50%);
+    width: 100vw;
+    position: absolute; */
+}
+
+[class*="fa-angle"]:hover {
+    opacity: 1;
+}
+
+.fa-angle-left {
+    margin-left: 1vw;
+    float: left;
+}
+
+.fa-angle-right {
+    margin-right: 1vw;
+    float: right;
+}
+
+.circles {
+    z-index: 1;
+    width: 100vw;
+    position: absolute;
+    bottom: 5vh;
+    text-align: center;
+}
+
+[id^="circle"] {
+    margin: 0 2px;
+    opacity: 0.5;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    border: solid 5px white;
+    cursor: pointer;
+}
+
+.active, [id^="circle"]:hover {
+    background-color: white;
+}
+
+@media(min-width: 992px) and (max-width: 1200px)  {
+    
+    img {
+        width: 115vw;
+    }
+
+    .circles {
+        bottom: 10vh;
+    }
+}
+
+@media (min-width: 780px) and (max-width: 991px) {
+	
+	img {
+        width: 135vw;
+    }
+
+    .circles {
+        bottom: 12vh;
+    }
+}
+
+@media (max-width: 779px) {
+
+    .circles {
+        bottom: 17vh;
+    }
+}
+
