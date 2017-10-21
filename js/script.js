@@ -56,10 +56,6 @@ $(function() {
         if (actualSlide === actualCircle) {
             currentCircle.addClass('active');
         }
-
-        console.log(actualSlide);
-        console.log(currentCircle);
-        console.log(actualCircle);
     }  
 });
 
